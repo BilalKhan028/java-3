@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Hidden Div</title>
+    <style>
+        #hiddenDiv {
+            display: none;
+            padding: 20px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <button id="toggleBtn">Toggle Div</button>
+    <div id="hiddenDiv">This is a hidden div</div>
+
+    <script>
+        document.getElementById('toggleBtn').addEventListener('click', function() {
+            let hiddenDiv = document.getElementById('hiddenDiv');
+
+            
+            if (hiddenDiv.style.display === 'none') {
+                hiddenDiv.style.display = 'block';
+            } else {
+                hiddenDiv.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

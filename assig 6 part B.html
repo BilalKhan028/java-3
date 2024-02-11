@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Hover Event</title>
+    <style>
+        #colorDiv {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            transition: background-color 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div id="colorDiv" onmouseover="changeColor()" onmouseout="resetColor()"></div>
+
+    <script>
+        function changeColor() {
+            document.getElementById('colorDiv').style.backgroundColor = 'lightgreen';
+        }
+
+        function resetColor() {
+            document.getElementById('colorDiv').style.backgroundColor = 'lightblue';
+        }
+    </script>
+</body>
+</html>

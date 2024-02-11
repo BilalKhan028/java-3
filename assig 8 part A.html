@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8 - Simulate Async Operation</title>
+</head>
+<body>
+    <button onclick="simulateAsyncOperation(true)">Simulate Success</button>
+    <button onclick="simulateAsyncOperation(false)">Simulate Error</button>
+
+    <script>
+        function simulateAsyncOperation(shouldSucceed) {
+            console.log("Starting asynchronous operation...");
+
+            
+            setTimeout(() => {
+                if (shouldSucceed) {
+                    console.log("Async operation succeeded!");
+                    alert("Async operation succeeded!");
+                } else {
+                    console.error("Async operation failed!");
+                    alert("Async operation failed!");
+                }
+            }, 2000); 
+        }
+    </script>
+</body>
+</html>
